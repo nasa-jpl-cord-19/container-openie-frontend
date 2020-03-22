@@ -5,7 +5,11 @@
 > Must be in the `frontend` folder
 
 ```bash
-yarn start
+npm install
+```
+
+```bash
+npm start
 ```
 
 ## Generating Static Website Assets
@@ -15,5 +19,5 @@ yarn start
 The static website will be located in the `build` folder.
 
 ```bash
-yarn build
+npm build
 ```

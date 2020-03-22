@@ -38,12 +38,6 @@ function App() {
     setResponse(JSON.stringify(result, null, "\t"));
   }
 
-  const jsonData = {
-    name: "Jonth",
-    email: "jobtd@mail.com",
-    website: "www.4codev.com"
-  };
-
   function download(content, fileName, contentType) {
     const a = document.createElement("a");
     const file = new Blob([content], { type: contentType });
@@ -74,7 +68,7 @@ function App() {
               Learn React
             </a>
           </header> */}
-          <Stack spacing={8} maxWidth={"50%"} mx="auto" mt={40}>
+          <Stack spacing={8} maxWidth={"50vw"} mx="auto" mt={40}>
             <Text fontSize="4xl">Data for <Code fontSize="3xl">/getExtraction</Code></Text>
             <Input id="covid-data" placeholder="Input data here" size="lg" />
             <Button variantColor="teal" onClick={() => submitData()}>Submit</Button>
@@ -83,7 +77,7 @@ function App() {
               <Text mt={10} fontSize="4xl">Response</Text>
               <Button variantColor="purple" onClick={() => onDownload()}>Download</Button>
               <br />
-              <Code as="pre" p={5}>
+              <Code as="pre" p={5} maxWidth="50vw">
                 {response}
               </Code>
             </div>
